@@ -19,7 +19,7 @@ public class SolrTest {
 			SolrInputDocument doc=new SolrInputDocument();
 			doc.addField("id","1");
 			doc.addField("name", "中国");
-			doc.addField("content", "现在好冷啊");
+			doc.addField("content", "现在好冷啊a");
 			server.add(doc);
 		} catch (SolrServerException e) {
 			// TODO Auto-generated catch block
