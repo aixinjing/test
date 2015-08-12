@@ -20,7 +20,7 @@ public class IKTest {
 					.tokenStream(
 							"",
 							new StringReader(
-									"这是一个中文分词的例子IKAnalyer can analysis english text too"));
+									"责令改正，并处200元以上2000元以下的罚款"));
 
 			OffsetAttribute offset = (OffsetAttribute) ts
 					.addAttribute(OffsetAttribute.class);

@@ -12,6 +12,7 @@ import org.apache.solr.common.SolrInputDocument;
 
 public class SolrTest {
 
+	//http://localhost:8080/solr/dataimport?command=full-import&clean=false
 	private final static String baseURL="http://172.16.20.123:8080/solr"; 
 	public  static void createIndex(){
 		try {
@@ -35,7 +36,7 @@ public class SolrTest {
 		
 		try {
 			HttpSolrServer server=new HttpSolrServer(baseURL);
-			SolrQuery query=new SolrQuery("罚款");
+			SolrQuery query=new SolrQuery("责令改正，并处200元以上2000元以下的罚款");
 			query.setParam("df", "CFBZ");
 			query.setParam("rows", "20");
 			QueryResponse resp=server.query(query);
